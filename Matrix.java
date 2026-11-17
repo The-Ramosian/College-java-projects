@@ -27,8 +27,10 @@ public class Matrix {
             int diagSum1 = 0;
             int diagSum2 = 0;
 
+            // Calculate Diagonal sum
             for (int i = 0; i < 3; i++) {
                 System.out.println("    ");
+                System.out.print("            ");
                 for (int j = 0; j< 3;j++){
                     System.out.printf("%-8d", arr[i][j]);
                     rowSums[i] += arr[i][j];
@@ -52,17 +54,19 @@ public class Matrix {
             }
             System.out.println();
             System.out.println("=============================================");
+
             //Print Diagonal sums
             System.out.printf("Diagonal sum 1:     %d%n", diagSum1);
             System.out.printf("Diagonal Sum 2:     %d%n", diagSum2);
+
             System.out.println();
             //Prompt repeat
-
             System.out.print("Try Again [y|n]: ");
             yn = sc.next().charAt(0);
             System.out.println();
         } while (yn == 'y' || yn == 'Y');
 
+        //Close scanner
         sc.close();
     }
 }
