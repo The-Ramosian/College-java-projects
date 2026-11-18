@@ -27,7 +27,7 @@ public class Matrix {
             int diagSum1 = 0;
             int diagSum2 = 0;
 
-            // 1. Calculate all sums FIRST before printing
+            // Calculate all sums
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
                     rowSums[i] += arr[i][j];
@@ -45,7 +45,7 @@ public class Matrix {
             // Print table headers
             System.out.printf("%41s%12s%n%n", "Row Sum", "Col Sum");
 
-            // 2. Print matrix elements, Row Sum, and Column Sum side-by-side
+            // Print matrix elements, Row Sum, and Column Sum side-by-side
             for (int i = 0; i < 3; i++) {
                 System.out.print("            ");
                 for (int j = 0; j < 3; j++) {
